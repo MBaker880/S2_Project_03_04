@@ -1,5 +1,6 @@
 ﻿@charset "utf-8";
 
+/* inserts fonts here */
 @font-face {
     font-family: Dobkin;
     src: url('DobkinPlain.ttf') format('truetype'),
@@ -25,31 +26,78 @@
 */
 
 /* Structure */
+/* background-color: rgb(253, 162, 87); that was origional color but purpleish color suited much better*/
 html {
-    background-color: rgb(234, 126, 96);
+    background-color: rgb(56, 54, 82);
 }
 
+/* changed font of body and made background white */
+body {
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* changes border to ID leftcol to create space betweem the html background and picture */
+body>section#leftcol {
+    margin: 15px 15px 15px 15px;
+    border: 0px 3px 0px 0px;
+}
+
+/* changes aside tributes to a greyish color and adds margin space */
+aside {
+    background-color: rgb(204, 203, 203);
+    margin: 20px;
+}
+
+/* removes discs from text */
+aside>ul {
+    list-style: none;
+    padding: 45px 45px;
+}
+
+/* changes font sizes for aside 1st heads */
+aside>h1 {
+    font-size: 2.1em;
+    margin: 15px;
+}
+
+/* same here but for 2nd heads */
+aside>h2 {
+    font-size: 1.6em;
+}
+
+/* changes color of the nav */
 header>nav {
-    background-color: whitesmoke;
+    background-color: rgb(204, 203, 203);
 }
 
+/* sets the rightcol text as a greyish color */
 section#rightcol {
-    background-color: whitesmoke;
+    background-color: rgb(204, 203, 203);
 }
 
+/* centers text and changes color to the same greyish colors as the others to match the theme */
+footer {
+    background-color: rgb(204, 203, 203);
+    text-align: center;
+}
+
+/* centers text */
 aside {
     text-align: center;
 }
 
 /* Headings */
+/* italicizes text of cambria and centers it with the font size of 2.1 em */
 h1, h2{
     font-style: italic;
     text-align: center;
-    font-size: 2.3em;
+    font-size: 2.1em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Navigation */
+/* center list and removes discs */
 nav>ul {
     list-style: none;
     text-align: center;
@@ -57,15 +105,23 @@ nav>ul {
 
 }
 
+/* remover underlining and sets links as black when page is loaded */
 nav a:link,
 nav a:visited {
     text-decoration: none;
     color: black;
 }
 
+/* cause the text to be a blueish color when mouse is hovered above it */
 nav a:hover,
 nav a:active {
     color: royalblue;
 }
 
 /* Blockquote */
+
+/* adds padding and margin space to the blockquote to its not mashes with the nav */
+blockquote {
+    margin: 30px;
+    padding: 5px;
+}
